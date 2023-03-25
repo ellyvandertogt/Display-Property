@@ -1,0 +1,76 @@
+/* https://www.youtube.com/watch?v=9zBsdzdE4sM&t=1s&ab_channel=WebDevSimplified */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(245, 227, 231);
+    color: rgb(78, 64, 64);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+    
+}
+
+.navbar {
+    background: rgb(234, 190, 198);
+    margin: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+
+}
+.name {
+    font-size: 3rem;
+    color: blueviolet;
+    padding-right: 2rem;
+    
+}
+.link-list {
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+    letter-spacing: 1px;
+    list-style: none;
+    margin-right: 2rem;
+    position: end;
+}
+
+.link a {
+    text-decoration: none;
+}
+.link:hover {
+    background-color: rgba(196, 134, 127, 0.583);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 200px); try 250px*/
+    grid-auto-rows: minmax(200px auto); /*try 220px*/
+    position: relative;
+    justify-content: center;
+    
+}
+.grid-item {
+    position: relative;
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 50px;
+    background-color: #379AD6;
+    color: #222;
+    border: 1px solid white;
+    
+    
+  }
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
